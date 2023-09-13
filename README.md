@@ -2,7 +2,10 @@
 This is an assignment wherein a multiple linear regression model is built to predict demand for shared bikes depending on the current trend.
 
 This assignment is a programming assignment wherein you have to build a multiple linear regression model for the prediction of demand for shared bikes. A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
-
+### Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Conclusions](#conclusions)
 ### Business Goal:
 We are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market.
 
@@ -12,9 +15,29 @@ We can observe in the dataset that some of the variables like 'weathersit' and '
 ### Model Building
 In the dataset provided, we will notice that there are three columns named 'casual', 'registered', and 'cnt'. The variable 'casual' indicates the number casual users who have made a rental. The variable 'registered' on the other hand shows the total number of registered users who have made a booking on a given day. Finally, the 'cnt' variable indicates the total number of bike rentals, including both casual and registered. The model should be built taking this 'cnt' as the target variable.
 
+### Conclusions
+- Train dataset R^2          : 0.833
+- Test dataset R^2           : 0.8038
+- Train dataset Adjusted R^2 : 0.829    
+- Test dataset Adjusted R^2  : 0.7944
+
 ### Model Evaluation:
 When you're done with model building and residual analysis and have made predictions on the test set, just make sure you use the following two lines of code to calculate the R-squared score on the test set:
+
+### Technologies Used
+-  warnings
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- sklearn
+- statsmodels
+
+<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 from sklearn.metrics import r2_score
 r2_score(y_test, y_pred)
 where y_test is the test data set for the target variable, and y_pred is the variable containing the predicted values of the target variable on the test set.
+### Contact
+Created by [@jinstark123] - feel free to contact me!
+
